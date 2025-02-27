@@ -56,7 +56,7 @@ Backend/
 ## 🔧 Setup Instructions
 ### 1️⃣ Clone the Repository
 ```sh
-git clone https://github.com/your-repo/task-manager.git
+git clone https://github.com/DPilat-Dev/Todo-CSharp.git
 cd task-manager
 ```
 
