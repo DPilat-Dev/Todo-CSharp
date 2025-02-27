@@ -114,7 +114,7 @@ Ensure MongoDB is running and set up an API to handle:
 - **PUT /api/ToDo/:id** → Update a task
 - **DELETE /api/ToDo/:id** → Remove a task
 
-## API Endpoints
+##⚡API Endpoints
 | Method | Endpoint        | Description              |
 |--------|----------------|--------------------------|
 | GET    | `/api/ToDo`    | Fetch all tasks         |
@@ -122,3 +122,11 @@ Ensure MongoDB is running and set up an API to handle:
 | POST   | `/api/ToDo`    | Create a new task       |
 | PUT    | `/api/ToDo/:id` | Update task details     |
 | DELETE | `/api/ToDo/:id` | Delete a task           |
+
+## 📷 ScreenShots
+![image](https://github.com/user-attachments/assets/7e408171-4d6b-4db6-a66a-168bd71826fc)
+![image](https://github.com/user-attachments/assets/8b65e04f-81b5-408f-b174-a0b73e939385)
+![image](https://github.com/user-attachments/assets/1f7ddbeb-4cf3-4b4d-a259-89fad6fde253)
+
+
+
