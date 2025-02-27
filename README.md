@@ -57,7 +57,6 @@ Backend/
 ### 1️⃣ Clone the Repository
 ```sh
 git clone https://github.com/DPilat-Dev/Todo-CSharp.git
-cd task-manager
 ```
 
 ### 2️⃣ Install Frontend Dependencies
