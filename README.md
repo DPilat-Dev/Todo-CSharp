@@ -83,15 +83,17 @@ use Tasks
 ```
 
 Ensure MongoDB is running and set up an API to handle:
-- **GET /api/tasks** → Fetch all tasks
-- **POST /api/tasks** → Create a new task
-- **PUT /api/tasks/:id** → Update a task
-- **DELETE /api/tasks/:id** → Remove a task
+- **GET /api/ToDo** → Fetch all tasks
+- **GET /api/ToDo/id** → Fetch a task
+- **POST /api/ToDo** → Create a new task
+- **PUT /api/ToDo/:id** → Update a task
+- **DELETE /api/ToDo/:id** → Remove a task
 
 ## API Endpoints
 | Method | Endpoint        | Description              |
 |--------|----------------|--------------------------|
 | GET    | `/api/ToDo`    | Fetch all tasks         |
+| GET    | `/api/ToDo/:id`    | Fetch a tasks         |
 | POST   | `/api/ToDo`    | Create a new task       |
 | PUT    | `/api/ToDo/:id` | Update task details     |
 | DELETE | `/api/ToDo/:id` | Delete a task           |
