@@ -6,7 +6,8 @@ namespace ToDoApi.Models
     public class ToDoTask
     {
         [BsonId]
-        public int Id { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string Id { get; set; } = ObjectId.GenerateNewId().ToString();
 
         [BsonElement("Title")]
         public string Title { get; set; }

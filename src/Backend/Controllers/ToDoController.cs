@@ -19,7 +19,7 @@ namespace ToDoApi.Controllers
         public async Task<List<ToDoTask>> Get() => await _todoTasksService.GetAsync();
 
         [HttpGet("{id:length(24)}")]
-        public async Task<ActionResult<ToDoTask>> Get(int id)
+        public async Task<ActionResult<ToDoTask>> Get(string id)
         {
             var task = await _todoTasksService.GetAsync(id);
 
@@ -38,7 +38,7 @@ namespace ToDoApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, ToDoTask updatedTask)
+        public async Task<IActionResult> Update(string id, ToDoTask updatedTask)
         {
             var task = await _todoTasksService.GetAsync(id);
 
@@ -53,7 +53,7 @@ namespace ToDoApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public async Task<IActionResult> Delete(string id)
         {
             var task = await _todoTasksService.GetAsync(id);
 

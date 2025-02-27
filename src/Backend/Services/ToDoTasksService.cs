@@ -19,12 +19,12 @@ namespace ToDoApi.Services
 
         public async Task<List<ToDoTask>> GetAsync() => await _toDoTasksCollection.Find(_ => true).ToListAsync();
 
-        public async Task<ToDoTask?> GetAsync(int id) => await _toDoTasksCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
+        public async Task<ToDoTask?> GetAsync(string id) => await _toDoTasksCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
 
         public async Task CreatAsync(ToDoTask newTask) => await _toDoTasksCollection.InsertOneAsync(newTask);
 
-        public async Task UpdateAsync(int id, ToDoTask updatedTask) => await _toDoTasksCollection.ReplaceOneAsync(x => x.Id == id, updatedTask);
+        public async Task UpdateAsync(string id, ToDoTask updatedTask) => await _toDoTasksCollection.ReplaceOneAsync(x => x.Id == id, updatedTask);
 
-        public async Task RemoveAsync(int id) => await _toDoTasksCollection.DeleteOneAsync(x => x.Id == id);
+        public async Task RemoveAsync(string id) => await _toDoTasksCollection.DeleteOneAsync(x => x.Id == id);
     }
 }
