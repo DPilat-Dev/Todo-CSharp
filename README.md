@@ -1,4 +1,4 @@
-# Task Management App
+# Todo App
 
 ## Overview
 This is a **Task Management App** built with **React, TypeScript, and TailwindCSS**. It allows users to **create, edit, complete, and delete tasks** using a **MongoDB Database** with a **.NET Backend**. This Project is just to keep my skills sharp in the age of AI, and to reenforce that I still can create and api and plug it into a frontend App. This Project isnt anything special its was just a exercise.
