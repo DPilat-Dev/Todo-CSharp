@@ -1,6 +1,6 @@
-# 📌 Task Management App
+# Task Management App
 
-## 🚀 Overview
+## Overview
 This is a **Task Management App** built with **React, TypeScript, and TailwindCSS**. It allows users to **create, edit, complete, and delete tasks** using a **MongoDB Database** with a **.NET Backend**.
 
 ## 📂 Frontend Project Structure
@@ -88,7 +88,7 @@ Ensure MongoDB is running and set up an API to handle:
 - **PUT /api/tasks/:id** → Update a task
 - **DELETE /api/tasks/:id** → Remove a task
 
-## ⚡ API Endpoints
+## API Endpoints
 | Method | Endpoint        | Description              |
 |--------|----------------|--------------------------|
 | GET    | `/api/ToDo`    | Fetch all tasks         |
