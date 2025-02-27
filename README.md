@@ -37,11 +37,11 @@ Backend/
 │── appsettings.json #  API Settings
 ```
 ## 🎯 Features
-✅ **Create Tasks** - Users can add tasks with a title & description.
-✅ **Edit Tasks** - Tasks can be updated via a modal popup.
-✅ **Mark Tasks as Complete** - Users can mark tasks as completed.
-✅ **Delete Tasks** - Remove tasks from the list.
-✅ **Automatic UI Refresh** - React Query ensures the UI updates dynamically.
+- ✅ **Create Tasks** - Users can add tasks with a title & description.
+- ✅ **Edit Tasks** - Tasks can be updated via a modal popup.
+- ✅ **Mark Tasks as Complete** - Users can mark tasks as completed.
+- ✅ **Delete Tasks** - Remove tasks from the list.
+- ✅ **Automatic UI Refresh** - React Query ensures the UI updates dynamically.
 
 ## 🛠 Technologies Used
 - **React 19** (UI Framework)
