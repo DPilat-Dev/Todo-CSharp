@@ -74,12 +74,37 @@ npm run dev
 dotnet run
 ```
 ### 4️⃣ Backend Setup (MongoDB)
-```sh
-docker run --name mongodb -p 27017:27017 -d mongodb/mongodb-community-server:latest
+Here is a MongoDb Docker Compose
 ```
-Inside docker container:
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: Tasks  # This ensures MongoDB initializes with the 'Tasks' database
+    volumes:
+      - mongodb_data:/data/db
+
+volumes:
+  mongodb_data:
+    driver: local
+
+```
+Create The Docker container
 ```sh
+docker-compose up -d
+```
+Check is the Tasks DB exists
+```sh
+show dbs
 use Tasks
+show collections
+
 ```
 
 Ensure MongoDB is running and set up an API to handle:
